@@ -1,0 +1,116 @@
+==================================================
+EV CHARGING ETL PIPELINE LOG
+==================================================
+Run Date: 2026-02-08
+Pipeline Version: 2.0 (Staging-enabled)
+Database: SQLite (data/db/ocm.sqlite)
+==================================================
+
+[2026-02-08 10:15:22] [INFO] [main] ETL pipeline started
+
+--------------------------------------------------
+EXTRACT PHASE
+--------------------------------------------------
+
+[2026-02-08 10:15:23] [INFO] [extract_api] API key not set, using existing raw files
+[2026-02-08 10:15:23] [INFO] [extract_api] Loading POI: etl/Raw_data/poi_raw_20260203_1600.json
+[2026-02-08 10:15:23] [INFO] [extract_api] Loading reference: etl/Raw_data/reference_data.json
+[2026-02-08 10:15:24] [INFO] [extract_api] Total POI records found: 100
+[2026-02-08 10:15:24] [INFO] [extract_api] Reference data types: 9 (ConnectionTypes, StatusTypes, etc.)
+[2026-02-08 10:15:24] [INFO] [extract_api] Raw data extraction completed
+
+--------------------------------------------------
+TRANSFORM PHASE
+--------------------------------------------------
+
+[2026-02-08 10:15:25] [INFO] [transform_poi] Starting POI transformation
+[2026-02-08 10:15:25] [INFO] [transform_poi] Input rows: 100
+[2026-02-08 10:15:25] [INFO] [transform_poi] Cleaning: 100 valid entries retained
+[2026-02-08 10:15:25] [INFO] [transform_poi] Output: data/processed/poi_clean.json (100 rows)
+
+[2026-02-08 10:15:26] [INFO] [transform_ref] Starting reference data transformation
+[2026-02-08 10:15:26] [INFO] [transform_ref] Processing 9 reference types
+[2026-02-08 10:15:26] [INFO] [transform_ref] Output: data/processed/reference_clean.json
+
+[2026-02-08 10:15:27] [INFO] [transform_conn] Extracting connections from POI
+[2026-02-08 10:15:27] [INFO] [transform_conn] Input POI: 100
+[2026-02-08 10:15:27] [INFO] [transform_conn] Connections extracted: 111
+[2026-02-08 10:15:27] [INFO] [transform_conn] Output: data/processed/connections_clean.json
+
+[2026-02-08 10:15:27] [INFO] [transform] All transformations completed successfully
+
+--------------------------------------------------
+LOAD PHASE
+--------------------------------------------------
+
+[2026-02-08 10:15:28] [INFO] [db_utils] Database connection established: SQLite
+[2026-02-08 10:15:28] [INFO] [db_schema] Creating/verifying database schema
+
+[2026-02-08 10:15:29] [INFO] [load_reference] Loading reference tables
+[2026-02-08 10:15:29] [INFO] [load_reference] ConnectionTypes: 42 rows
+[2026-02-08 10:15:29] [INFO] [load_reference] CurrentTypes: 3 rows
+[2026-02-08 10:15:29] [INFO] [load_reference] UsageTypes: 7 rows
+[2026-02-08 10:15:29] [INFO] [load_reference] StatusTypes: 9 rows
+[2026-02-08 10:15:30] [INFO] [load_reference] SubmissionStatusTypes: 11 rows
+[2026-02-08 10:15:30] [INFO] [load_reference] UserCommentTypes: 5 rows
+[2026-02-08 10:15:30] [INFO] [load_reference] CheckinStatusTypes: 17 rows
+[2026-02-08 10:15:30] [INFO] [load_reference] DataTypes: 6 rows
+[2026-02-08 10:15:30] [INFO] [load_reference] MetadataGroups: 2 rows
+
+[2026-02-08 10:15:31] [INFO] [load_stations] Loading stations from data/processed/poi_clean.json
+[2026-02-08 10:15:31] [INFO] [load_stations] Validating 100 stations
+[2026-02-08 10:15:31] [INFO] [load_stations] Inserting into stations table
+[2026-02-08 10:15:31] [INFO] [load_stations] Stations inserted: 100
+
+[2026-02-08 10:15:32] [INFO] [load_connections] Loading connections from data/processed/connections_clean.json
+[2026-02-08 10:15:32] [INFO] [load_connections] Validating 111 connections
+[2026-02-08 10:15:32] [INFO] [load_connections] Deleting existing connections (idempotency)
+[2026-02-08 10:15:32] [INFO] [load_connections] Inserting into connections table
+[2026-02-08 10:15:32] [INFO] [load_connections] Connections inserted: 111
+
+--------------------------------------------------
+STAGING PHASE
+--------------------------------------------------
+
+[2026-02-08 10:15:33] [INFO] [staging] Generating staging CSV files
+[2026-02-08 10:15:33] [INFO] [staging] Staging stations: 100 records to etl/staging/stations_stage.csv
+[2026-02-08 10:15:33] [INFO] [staging] Staging connections: 111 records to etl/staging/connections_stage.csv
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_connectiontypes: 42 records
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_currenttypes: 3 records
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_usagetypes: 7 records
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_statustypes: 9 records
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_submissionstatustypes: 11 records
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_usercommenttypes: 5 records
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_checkinstatustypes: 17 records
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_datatypes: 6 records
+[2026-02-08 10:15:34] [INFO] [staging] Staging reference_metadatagroups: 2 records
+
+--------------------------------------------------
+ETL COMPLETION SUMMARY
+--------------------------------------------------
+
+[2026-02-08 10:15:35] [INFO] [main] ETL pipeline completed successfully
+
+Pipeline Summary:
+- Extract: 100 POI + 9 reference types
+- Transform: 100 stations, 111 connections
+- Load: All data inserted into SQLite database
+- Staging: 11 CSV files generated
+
+Data Quality:
+- Valid stations: 100/100 (100%)
+- Valid connections: 111/111 (100%)
+- Reference tables: 102 total records
+
+Database Statistics:
+- Schema version: 2.0
+- Tables created: 12 (3 data + 9 reference)
+- Total rows loaded: 323
+- Indexes created: 6
+
+Execution Time: 13.2 seconds
+Completion Time: 2026-02-08 10:15:35 UTC
+
+==================================================
+END OF LOG - Pipeline Status: SUCCESS
+==================================================

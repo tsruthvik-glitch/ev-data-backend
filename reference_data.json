@@ -1,0 +1,796 @@
+{
+  "ConnectionTypes": [
+    {
+      "FormalName": "Avcon SAE J1772-2001",
+      "IsDiscontinued": true,
+      "IsObsolete": false,
+      "ID": 7,
+      "Title": "Avcon Connector"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": null,
+      "IsObsolete": null,
+      "ID": 4,
+      "Title": "Blue Commando (2P+E)"
+    },
+    {
+      "FormalName": "BS1363 / Type G",
+      "IsDiscontinued": null,
+      "IsObsolete": null,
+      "ID": 3,
+      "Title": "BS1363 3 Pin 13 Amp"
+    },
+    {
+      "FormalName": "IEC 62196-3 Configuration EE",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 32,
+      "Title": "CCS (Type 1)"
+    },
+    {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 16,
+      "Title": "CEE 3 Pin"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 17,
+      "Title": "CEE 5 Pin"
+    },
+    {
+      "FormalName": "CEE 7/4",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 28,
+      "Title": "CEE 7/4 - Schuko - Type F"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 23,
+      "Title": "CEE 7/5"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 18,
+      "Title": "CEE+ 7 Pin"
+    },
+    {
+      "FormalName": "IEC 62196-3 Configuration AA",
+      "IsDiscontinued": null,
+      "IsObsolete": null,
+      "ID": 2,
+      "Title": "CHAdeMO"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1044,
+      "Title": "ChaoJi / CHAdeMO 3.x"
+    },
+    {
+      "FormalName": "Europlug 2-Pin (CEE 7/16)",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 13,
+      "Title": "Europlug 2-Pin (CEE 7/16)"
+    },
+    {
+      "FormalName": "GB-T AC - GB/T 20234.2 (Socket)",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1038,
+      "Title": "GB-T AC - GB/T 20234.2 (Socket)"
+    },
+    {
+      "FormalName": "GB-T AC - GB/T 20234.2 (Tethered Cable)",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1039,
+      "Title": "GB-T AC - GB/T 20234.2 (Tethered Cable)"
+    },
+    {
+      "FormalName": "GB-T DC - GB/T 20234.3",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1040,
+      "Title": "GB-T DC - GB/T 20234.3"
+    },
+    {
+      "FormalName": "IEC 60309 3-pin",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 34,
+      "Title": "IEC 60309 3-pin"
+    },
+    {
+      "FormalName": "IEC 60309 5-pin",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 35,
+      "Title": "IEC 60309 5-pin"
+    },
+    {
+      "FormalName": "Large Paddle Inductive",
+      "IsDiscontinued": true,
+      "IsObsolete": true,
+      "ID": 5,
+      "Title": "LP Inductive"
+    },
+    {
+      "FormalName": "SAE J3400",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 27,
+      "Title": "NACS / Tesla Supercharger"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 10,
+      "Title": "NEMA 14-30"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 11,
+      "Title": "NEMA 14-50"
+    },
+    {
+      "FormalName": "NEMA 5-15R",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 22,
+      "Title": "NEMA 5-15R"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 9,
+      "Title": "NEMA 5-20R"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 15,
+      "Title": "NEMA 6-15"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 14,
+      "Title": "NEMA 6-20"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1042,
+      "Title": "NEMA TT-30R"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 36,
+      "Title": "SCAME Type 3A (Low Power)"
+    },
+    {
+      "FormalName": "IEC 62196-2 Type 3",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 26,
+      "Title": "SCAME Type 3C (Schneider-Legrand)"
+    },
+    {
+      "FormalName": "Small Paddle Inductive",
+      "IsDiscontinued": true,
+      "IsObsolete": true,
+      "ID": 6,
+      "Title": "SP Inductive"
+    },
+    {
+      "FormalName": "T13/ IEC Type J",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1037,
+      "Title": "T13 - SEC1011 ( Swiss domestic 3-pin ) - Type J"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 30,
+      "Title": "Tesla (Model S/X)"
+    },
+    {
+      "FormalName": "Tesla Connector",
+      "IsDiscontinued": true,
+      "IsObsolete": false,
+      "ID": 8,
+      "Title": "Tesla (Roadster)"
+    },
+    {
+      "FormalName": "Tesla Battery Swap Station",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 31,
+      "Title": "Tesla Battery Swap"
+    },
+    {
+      "FormalName": "AS/NZS 3123 Three Phase",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1041,
+      "Title": "Three Phase 5-Pin (AS/NZ 3123)"
+    },
+    {
+      "FormalName": "SAE J1772-2009",
+      "IsDiscontinued": null,
+      "IsObsolete": null,
+      "ID": 1,
+      "Title": "Type 1 (J1772)"
+    },
+    {
+      "FormalName": "IEC 62196-2 Type 2",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 25,
+      "Title": "Type 2 (Socket Only)"
+    },
+    {
+      "FormalName": "IEC 62196-2",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1036,
+      "Title": "Type 2 (Tethered Connector) "
+    },
+    {
+      "FormalName": "Type I/AS 3112/CPCS-CCC",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 29,
+      "Title": "Type I (AS 3112)"
+    },
+    {
+      "FormalName": "IEC Type M (SANS 164-1, IS 1293:2005)",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1043,
+      "Title": "Type M"
+    },
+    {
+      "FormalName": "Not Specified",
+      "IsDiscontinued": null,
+      "IsObsolete": null,
+      "ID": 0,
+      "Title": "Unknown"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 24,
+      "Title": "Wireless Charging"
+    },
+    {
+      "FormalName": null,
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 21,
+      "Title": "XLR Plug (4 pin)"
+    }
+  ],
+  "CurrentTypes": [
+    {
+      "Description": "Alternating Current - Single Phase",
+      "ID": 10,
+      "Title": "AC (Single-Phase)"
+    },
+    {
+      "Description": "Alternating Current - Three Phase",
+      "ID": 20,
+      "Title": "AC (Three-Phase)"
+    },
+    {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    }
+  ],
+  "UsageTypes": [
+    {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 0,
+      "Title": "(Unknown)"
+    },
+    {
+      "IsPayAtLocation": false,
+      "IsMembershipRequired": false,
+      "IsAccessKeyRequired": false,
+      "ID": 6,
+      "Title": "Private - For Staff, Visitors or Customers"
+    },
+    {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": true,
+      "IsAccessKeyRequired": null,
+      "ID": 2,
+      "Title": "Private - Restricted Access"
+    },
+    {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 3,
+      "Title": "Privately Owned - Notice Required"
+    },
+    {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    {
+      "IsPayAtLocation": false,
+      "IsMembershipRequired": true,
+      "IsAccessKeyRequired": true,
+      "ID": 4,
+      "Title": "Public - Membership Required"
+    },
+    {
+      "IsPayAtLocation": false,
+      "IsMembershipRequired": false,
+      "IsAccessKeyRequired": false,
+      "ID": 7,
+      "Title": "Public - Notice Required"
+    },
+    {
+      "IsPayAtLocation": true,
+      "IsMembershipRequired": false,
+      "IsAccessKeyRequired": false,
+      "ID": 5,
+      "Title": "Public - Pay At Location"
+    }
+  ],
+  "StatusTypes": [
+    {
+      "IsOperational": null,
+      "IsUserSelectable": true,
+      "ID": 0,
+      "Title": "Unknown"
+    },
+    {
+      "IsOperational": true,
+      "IsUserSelectable": false,
+      "ID": 10,
+      "Title": "Currently Available (Automated Status)"
+    },
+    {
+      "IsOperational": true,
+      "IsUserSelectable": false,
+      "ID": 20,
+      "Title": "Currently In Use (Automated Status)"
+    },
+    {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 30,
+      "Title": "Temporarily Unavailable"
+    },
+    {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 75,
+      "Title": "Partly Operational (Mixed)"
+    },
+    {
+      "IsOperational": false,
+      "IsUserSelectable": true,
+      "ID": 100,
+      "Title": "Not Operational"
+    },
+    {
+      "IsOperational": false,
+      "IsUserSelectable": true,
+      "ID": 150,
+      "Title": "Planned For Future Date"
+    },
+    {
+      "IsOperational": false,
+      "IsUserSelectable": true,
+      "ID": 200,
+      "Title": "Removed (Decommissioned)"
+    },
+    {
+      "IsOperational": false,
+      "IsUserSelectable": true,
+      "ID": 210,
+      "Title": "Removed (Duplicate Listing)"
+    }
+  ],
+  "SubmissionStatusTypes": [
+    {
+      "IsLive": false,
+      "ID": 1,
+      "Title": "Submission Under Review"
+    },
+    {
+      "IsLive": false,
+      "ID": 50,
+      "Title": "Imported and Under Review"
+    },
+    {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    {
+      "IsLive": false,
+      "ID": 250,
+      "Title": "Submission Rejected - Incomplete"
+    },
+    {
+      "IsLive": false,
+      "ID": 1000,
+      "Title": "Delisted"
+    },
+    {
+      "IsLive": false,
+      "ID": 1001,
+      "Title": "Delisted - Duplicate"
+    },
+    {
+      "IsLive": false,
+      "ID": 1002,
+      "Title": "Delisted - No Longer Active/Decommissioned"
+    },
+    {
+      "IsLive": false,
+      "ID": 1005,
+      "Title": "Delisted - Superseded by Update"
+    },
+    {
+      "IsLive": false,
+      "ID": 1010,
+      "Title": "Delisted - Not Public Information/Is Private Residence"
+    },
+    {
+      "IsLive": false,
+      "ID": 1020,
+      "Title": "Delisted - Removed by Import Data Provider"
+    }
+  ],
+  "UserCommentTypes": [
+    {
+      "ID": 10,
+      "Title": "General Comment"
+    },
+    {
+      "ID": 50,
+      "Title": "Important Notice (For Other Users)"
+    },
+    {
+      "ID": 100,
+      "Title": "Suggested Change (Note To Editors)"
+    },
+    {
+      "ID": 110,
+      "Title": "Suggested Changed (Actioned By Editor)"
+    },
+    {
+      "ID": 1000,
+      "Title": "Fault Report (Notice To Users And Operator)"
+    }
+  ],
+  "CheckinStatusTypes": [
+    {
+      "IsPositive": null,
+      "IsAutomatedCheckin": false,
+      "ID": 0,
+      "Title": "Did Not Visit Location"
+    },
+    {
+      "IsPositive": true,
+      "IsAutomatedCheckin": false,
+      "ID": 10,
+      "Title": "Charged Successfully"
+    },
+    {
+      "IsPositive": true,
+      "IsAutomatedCheckin": true,
+      "ID": 15,
+      "Title": "Charged Successfully (Automated Checkin)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 20,
+      "Title": "Failed to Charge (Equipment Not Operational)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 22,
+      "Title": "Failed to Charge (Equipment Not Fully Installed)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 25,
+      "Title": "Failed to Charge (Equipment Problem)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 30,
+      "Title": "Failed to Charge (Equipment Not Compatible)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 40,
+      "Title": "Failed to Charge (Required Other Access Card/Fob etc.)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 50,
+      "Title": "Failed to Charge (No Charging Equipment Present)"
+    },
+    {
+      "IsPositive": true,
+      "IsAutomatedCheckin": false,
+      "ID": 100,
+      "Title": "Charging Spot In Use (Other EV Parked)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 110,
+      "Title": "Charging Spot In Use (Non-EV Parked)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 120,
+      "Title": "Charging Spot Not Accessible (Access locked or site closed)"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 130,
+      "Title": "Charging Spot Not Found (Inadequate or Incorrect Details)"
+    },
+    {
+      "IsPositive": true,
+      "IsAutomatedCheckin": false,
+      "ID": 140,
+      "Title": "Equipment & Location Confirmed Correct"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 150,
+      "Title": "Location Is A Duplicate"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 160,
+      "Title": "Equipment/Location Has Been Decommissioned"
+    },
+    {
+      "IsPositive": false,
+      "IsAutomatedCheckin": false,
+      "ID": 200,
+      "Title": "Other (Negative/Bad)"
+    },
+    {
+      "IsPositive": true,
+      "IsAutomatedCheckin": false,
+      "ID": 210,
+      "Title": "Other (Positive/Good)"
+    }
+  ],
+  "DataTypes": [
+    {
+      "ID": 1,
+      "Title": "Single Line Text"
+    },
+    {
+      "ID": 2,
+      "Title": "Multi Line Text"
+    },
+    {
+      "ID": 3,
+      "Title": "Number"
+    },
+    {
+      "ID": 4,
+      "Title": "Date"
+    },
+    {
+      "ID": 5,
+      "Title": "Boolean"
+    },
+    {
+      "ID": 10,
+      "Title": "Option List"
+    }
+  ],
+  "MetadataGroups": [
+    {
+      "DataProviderID": 1,
+      "IsRestrictedEdit": false,
+      "IsPublicInterest": true,
+      "MetadataFields": [
+        {
+          "MetadataGroupID": 1,
+          "DataTypeID": 10,
+          "DataType": null,
+          "MetadataFieldOptions": [
+            {
+              "MetadataFieldID": 1,
+              "ID": 1,
+              "Title": "Shopping"
+            },
+            {
+              "MetadataFieldID": 1,
+              "ID": 2,
+              "Title": "Hotel"
+            },
+            {
+              "MetadataFieldID": 1,
+              "ID": 3,
+              "Title": "Restaurant"
+            },
+            {
+              "MetadataFieldID": 1,
+              "ID": 8,
+              "Title": "Parking"
+            },
+            {
+              "MetadataFieldID": 1,
+              "ID": 9,
+              "Title": "Secure"
+            }
+          ],
+          "ID": 1,
+          "Title": "POI Type"
+        },
+        {
+          "MetadataGroupID": 1,
+          "DataTypeID": 1,
+          "DataType": null,
+          "MetadataFieldOptions": null,
+          "ID": 2,
+          "Title": "Access Hours"
+        },
+        {
+          "MetadataGroupID": 1,
+          "DataTypeID": 10,
+          "DataType": null,
+          "MetadataFieldOptions": [
+            {
+              "MetadataFieldID": 4,
+              "ID": 4,
+              "Title": "Positioning"
+            }
+          ],
+          "ID": 4,
+          "Title": "Attribution"
+        },
+        {
+          "MetadataGroupID": 1,
+          "DataTypeID": 10,
+          "DataType": null,
+          "MetadataFieldOptions": [
+            {
+              "MetadataFieldID": 5,
+              "ID": 5,
+              "Title": "Car"
+            },
+            {
+              "MetadataFieldID": 5,
+              "ID": 6,
+              "Title": "Motorcycle"
+            },
+            {
+              "MetadataFieldID": 5,
+              "ID": 7,
+              "Title": "Bus"
+            },
+            {
+              "MetadataFieldID": 5,
+              "ID": 10,
+              "Title": "Goods/Delivery Vehicles"
+            },
+            {
+              "MetadataFieldID": 5,
+              "ID": 11,
+              "Title": "Taxi"
+            },
+            {
+              "MetadataFieldID": 5,
+              "ID": 12,
+              "Title": "Bike"
+            }
+          ],
+          "ID": 5,
+          "Title": "Vehicle Type"
+        }
+      ],
+      "ID": 1,
+      "Title": "Extended Information"
+    },
+    {
+      "DataProviderID": 1,
+      "IsRestrictedEdit": false,
+      "IsPublicInterest": false,
+      "MetadataFields": [
+        {
+          "MetadataGroupID": 2,
+          "DataTypeID": 10,
+          "DataType": null,
+          "MetadataFieldOptions": null,
+          "ID": 3,
+          "Title": "Group of Companies"
+        },
+        {
+          "MetadataGroupID": 2,
+          "DataTypeID": 1,
+          "DataType": null,
+          "MetadataFieldOptions": null,
+          "ID": 6,
+          "Title": "External Reference Id"
+        },
+        {
+          "MetadataGroupID": 2,
+          "DataTypeID": 1,
+          "DataType": null,
+          "MetadataFieldOptions": null,
+          "ID": 8,
+          "Title": "External Url"
+        }
+      ],
+      "ID": 2,
+      "Title": "Supporting Data"
+    }
+  ]
+}

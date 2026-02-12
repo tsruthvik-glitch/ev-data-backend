@@ -1,0 +1,11 @@
+status_type_id,status_title,is_operational,is_user_selectable,status_category
+0,Unknown,False,True,UNKNOWN
+10,Currently Available (Automated Status),True,False,ACTIVE
+20,Currently In Use (Automated Status),True,False,ACTIVE
+30,Temporarily Unavailable,True,True,TEMPORARY
+50,Operational,True,True,ACTIVE
+75,Partly Operational (Mixed),True,True,PARTLY_OPERATIONAL
+100,Not Operational,False,True,INACTIVE
+150,Planned For Future Date,False,True,PLANNED
+200,Removed (Decommissioned),False,True,REMOVED
+210,Removed (Duplicate Listing),False,True,REMOVED

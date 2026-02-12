@@ -1,0 +1,201 @@
+"""
+Operators data cleaning and validation module.
+
+This module provides utilities for cleaning and validating operator data
+from the staging CSV files and preparing it for database loading.
+
+DEPRECATED: Operators are now handled as part of reference data.
+This file is kept for backwards compatibility and reference only.
+"""
+
+import json
+from pathlib import Path
+from typing import List, Dict, Any, Optional
+
+# Modern reference data import (recommended)
+try:
+    from etl.transform.clean_reference import clean_reference_data
+except ImportError:
+    # Fallback if import fails
+    def clean_reference_data(ref_data: Dict[str, Any]) -> Dict[str, List[Dict[str, Any]]]:
+        """Fallback function - use etl/transform/clean_reference.py instead."""
+        print("[WARN] Using fallback clean_reference_data function")
+        return {}
+
+
+def load_and_clean_operators_csv(csv_file: Optional[Path] = None) -> List[Dict[str, Any]]:
+    """
+    Load operators from staging CSV and return cleaned list of dicts.
+    
+    DEPRECATED: Use etl/transform/clean_reference.py instead for reference data.
+    
+    Args:
+        csv_file: Path to staging CSV (no default - operators are part of reference data now)
+    
+    Returns:
+        List of cleaned operator dictionaries
+    """
+    if csv_file is None:
+        raise ValueError("Operators are now handled as reference data. Use etl/transform/clean_reference.py")
+    
+    if not csv_file.exists():
+        raise FileNotFoundError(f"Staging file not found: {csv_file}")
+    
+    # Import pandas only if available
+    try:
+        import pandas as pd
+        df = pd.read_csv(csv_file)
+        operators = df.to_dict(orient="records")
+    except ImportError:
+        # Fallback: manual CSV parsing
+        import csv
+        operators = []
+        with open(csv_file, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            operators = list(reader)
+    
+    # Basic cleaning
+    cleaned = []
+    for op in operators:
+        # Skip invalid records
+        if not op.get("operator_id") or not op.get("operator_name"):
+            continue
+        
+        # Normalize text fields
+        op["operator_name"] = str(op.get("operator_name", "")).strip()
+        op["website_url"] = str(op.get("website_url", "")).strip()
+        op["email"] = str(op.get("email", "")).strip()
+        
+        cleaned.append(op)
+    
+    return cleaned
+
+
+def validate_operators(operators: List[Dict[str, Any]]) -> tuple:
+    """
+    Validate list of operators.
+    
+    Returns:
+        (valid_count, invalid_count, error_list)
+    """
+    valid = 0
+    invalid = 0
+    errors = []
+    
+    for idx, op in enumerate(operators):
+        if not op.get("operator_id"):
+            invalid += 1
+            errors.append(f"Row {idx}: Missing operator_id")
+            continue
+        
+        if not op.get("operator_name"):
+            invalid += 1
+            errors.append(f"Row {idx}: Missing operator_name")
+            continue
+        
+        # Validate URL format if present
+        if op.get("website_url"):
+            url = op.get("website_url", "")
+            if url and not url.startswith(("http://", "https://", "ftp://")):
+                invalid += 1
+                errors.append(f"Row {idx}: Invalid website_url format")
+                continue
+        
+        # Validate email format if present
+        if op.get("email"):
+            email = op.get("email", "")
+            if email and "@" not in email:
+                invalid += 1
+                errors.append(f"Row {idx}: Invalid email format")
+                continue
+        
+        valid += 1
+    
+    return valid, invalid, errors
+
+
+def extract_operators_from_stations(stations: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Extract unique operators from station data.
+    
+    Args:
+        stations: List of station dictionaries from cleaned POI data
+    
+    Returns:
+        List of deduplicated operator records
+    """
+    operators = {}
+    
+    for station in stations:
+        operator_info = station.get("OperatorInfo") or {}
+        operator_id = operator_info.get("ID")
+        
+        if operator_id and operator_id not in operators:
+            operators[operator_id] = {
+                "operator_id": operator_id,
+                "operator_name": operator_info.get("Title", "Unknown"),
+                "website_url": operator_info.get("WebsiteURL", ""),
+                "phone_primary": operator_info.get("PhonePrimaryContactInfo", ""),
+                "phone_secondary": operator_info.get("PhoneSecondaryContactInfo", ""),
+                "email": operator_info.get("ContactEmail", ""),
+                "is_private_individual": operator_info.get("IsPrivateIndividual", False),
+                "is_active": operator_info.get("IsActive", True)
+            }
+    
+    return list(operators.values())
+
+
+def export_clean_operators_json(operators: List[Dict[str, Any]], output_file: Optional[Path] = None) -> int:
+    """
+    Export cleaned operators to JSON file.
+    
+    DEPRECATED: Use etl/staging/staging_manager.py::stage_reference_data instead.
+    
+    Args:
+        operators: List of operator dictionaries
+        output_file: Output path (defaults to data/processed/operators_clean.json)
+    
+    Returns:
+        Number of records written
+    """
+    if output_file is None:
+        output_file = Path("data/processed/operators_clean.json")
+    
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(operators, f, ensure_ascii=False, indent=2)
+    
+    print(f"[OK] Exported {len(operators)} operators to {output_file}")
+    return len(operators)
+
+
+if __name__ == "__main__":
+    # Example usage (for backwards compatibility)
+    print("[*] Loading and cleaning operators from stations...")
+    
+    try:
+        # First load stations to extract operators
+        poi_file = Path("data/processed/poi_clean.json")
+        if not poi_file.exists():
+            print("[ERR] poi_clean.json not found. Run transform first.")
+        else:
+            with open(poi_file, "r", encoding="utf-8") as f:
+                stations = json.load(f)
+            
+            operators = extract_operators_from_stations(stations)
+            print(f"[OK] Extracted {len(operators)} unique operators")
+            
+            valid, invalid, errors = validate_operators(operators)
+            print(f"[OK] Validation: {valid} valid, {invalid} invalid")
+            
+            if errors:
+                for error in errors[:5]:  # Show first 5 errors
+                    print(f"  [ERR] {error}")
+            
+            # Export to JSON
+            n = export_clean_operators_json(operators)
+            print(f"[OK] Pipeline complete: {n} operators processed")
+    
+    except Exception as e:
+        print(f"[ERR] Error: {e}")

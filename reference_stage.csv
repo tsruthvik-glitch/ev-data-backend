@@ -1,0 +1,62 @@
+ref_type,ref_id,title,description,is_operational,is_live
+ConnectionType,1,Type 1 Connector,Proprietary connector type,True,True
+ConnectionType,2,IEC 62196-2 Type 1,SAE J1772 connector,True,True
+ConnectionType,3,IEC 62196-2 Type 2,Mennekes connector,True,True
+ConnectionType,4,IEC 62196-3 Connector,CHADEMO connector,True,True
+ConnectionType,5,IEC 62196-3 DB Connector,High-power connector,True,True
+CurrentType,1,DC,Direct current charging,True,True
+CurrentType,2,AC Single Phase,Alternating current single phase,True,True
+CurrentType,3,AC Three Phase,Alternating current three phase,True,True
+UsageType,1,Public,Open to public,True,True
+UsageType,2,Private,Private use only,True,True
+UsageType,3,Private - Restricted Access,Restricted access private,True,True
+UsageType,4,Private - Membership Required,Membership required,True,True
+UsageType,5,Public - Restricted Access,Public with restrictions,True,True
+UsageType,6,Public - Membership Required,Membership required public,True,True
+UsageType,7,Unknown,Unknown usage type,False,True
+StatusType,0,Unknown,Unknown status,False,False
+StatusType,10,Operational,Fully operational,True,True
+StatusType,20,Temporarily Unavailable,Temporarily out of service,False,True
+StatusType,30,Planned For Future Date,Planned installation,False,True
+StatusType,40,Not Operational,Permanently closed,False,False
+SubmissionStatusType,1,Unreviewed,Not yet reviewed,False,True
+SubmissionStatusType,2,Accepted,Review accepted,True,True
+SubmissionStatusType,3,Rejected,Review rejected,False,False
+SubmissionStatusType,4,Duplicate,Marked as duplicate,False,False
+SubmissionStatusType,5,Under Review,Currently under review,False,True
+SubmissionStatusType,6,Submitted,Newly submitted,False,True
+SubmissionStatusType,7,Approved for Publication,Approved,True,True
+SubmissionStatusType,8,Deleted,Deleted entry,False,False
+SubmissionStatusType,9,Requires Edit,Needs edits,False,True
+SubmissionStatusType,10,Not Needed,Not required,False,False
+SubmissionStatusType,11,Withdrawn,Submission withdrawn,False,False
+UserCommentType,1,GeneralComment,General comment,True,True
+UserCommentType,2,PlaceReview,Location review,True,True
+UserCommentType,3,BadLocation,Incorrect location,True,True
+UserCommentType,4,GeneralEnquiry,General enquiry,True,True
+UserCommentType,5,Abuse,Abusive content,False,False
+CheckinStatusType,1,Checked In,User checked in,True,True
+CheckinStatusType,2,Feedback,User feedback,True,True
+CheckinStatusType,3,Problem Report,Problem reported,True,True
+CheckinStatusType,4,Positive Review,Positive review,True,True
+CheckinStatusType,5,Negative Review,Negative review,True,True
+CheckinStatusType,6,Favourite,Marked as favourite,True,True
+CheckinStatusType,7,PIN Given,PIN provided,True,True
+CheckinStatusType,8,PIN Requested,PIN requested,True,True
+CheckinStatusType,9,PIN Available,PIN available,True,True
+CheckinStatusType,10,Current Type Info Needed,Current type info needed,False,True
+CheckinStatusType,11,Connector Type Info Needed,Connector type info needed,False,True
+CheckinStatusType,12,Charging Status Info Needed,Charging status needed,False,True
+CheckinStatusType,13,Comment Requested,Comment requested,False,True
+CheckinStatusType,14,Out of Service,Out of service,False,True
+CheckinStatusType,15,Issue Reported,Issue reported,False,True
+CheckinStatusType,16,Fault Fixed,Fault fixed,True,True
+CheckinStatusType,17,Reinstated,Reinstated,True,True
+DataType,1,Contributed Data,User contributed data,True,True
+DataType,2,Imported Data,Imported from external source,True,True
+DataType,3,Operator Data,Data from operator,True,True
+DataType,4,Research Data,Research data,True,True
+DataType,5,Historic Data,Historic data,False,True
+DataType,6,Automated Data,Automatically generated data,True,True
+MetadataGroup,1,Owner Details,Information about owner,True,True
+MetadataGroup,2,Location Details,Geographic location info,True,True

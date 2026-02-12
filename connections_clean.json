@@ -1,0 +1,3782 @@
+[
+  {
+    "ID": 798291,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 475401
+  },
+  {
+    "ID": 798134,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 120,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Very good to interchange",
+    "POI_ID": 475337
+  },
+  {
+    "ID": 796564,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 40,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474598
+  },
+  {
+    "ID": 796562,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474596
+  },
+  {
+    "ID": 796561,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 40,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474595
+  },
+  {
+    "ID": 796560,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474594
+  },
+  {
+    "ID": 796558,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Sharing",
+    "POI_ID": 474593
+  },
+  {
+    "ID": 796557,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474592
+  },
+  {
+    "ID": 796553,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474589
+  },
+  {
+    "ID": 796550,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 25,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474587
+  },
+  {
+    "ID": 796547,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474585
+  },
+  {
+    "ID": 796546,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474584
+  },
+  {
+    "ID": 796543,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Sharing",
+    "POI_ID": 474582
+  },
+  {
+    "ID": 796540,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474580
+  },
+  {
+    "ID": 796537,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Sharing",
+    "POI_ID": 474578
+  },
+  {
+    "ID": 796532,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474576
+  },
+  {
+    "ID": 796531,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 20,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474575
+  },
+  {
+    "ID": 796530,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474574
+  },
+  {
+    "ID": 796529,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474573
+  },
+  {
+    "ID": 796527,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474571
+  },
+  {
+    "ID": 796526,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 45,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474570
+  },
+  {
+    "ID": 796524,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Sharing",
+    "POI_ID": 474568
+  },
+  {
+    "ID": 796523,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474567
+  },
+  {
+    "ID": 796520,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474565
+  },
+  {
+    "ID": 796519,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474564
+  },
+  {
+    "ID": 796518,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 40,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Sharing",
+    "POI_ID": 474563
+  },
+  {
+    "ID": 796517,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474562
+  },
+  {
+    "ID": 796516,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 50,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Sharing",
+    "POI_ID": 474561
+  },
+  {
+    "ID": 796515,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474560
+  },
+  {
+    "ID": 796513,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474559
+  },
+  {
+    "ID": 796514,
+    "ConnectionTypeID": 1036,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-2",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1036,
+      "Title": "Type 2 (Tethered Connector) "
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 2,
+    "Level": {
+      "Comments": "Over 2 kW, usually non-domestic socket type",
+      "IsFastChargeCapable": false,
+      "ID": 2,
+      "Title": "Level 2 : Medium (Over 2kW)"
+    },
+    "PowerKW": 22,
+    "CurrentTypeID": 20,
+    "CurrentType": {
+      "Description": "Alternating Current - Three Phase",
+      "ID": 20,
+      "Title": "AC (Three-Phase)"
+    },
+    "Quantity": 1,
+    "POI_ID": 474559
+  },
+  {
+    "ID": 796510,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474558
+  },
+  {
+    "ID": 796511,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474558
+  },
+  {
+    "ID": 796509,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474557
+  },
+  {
+    "ID": 796508,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474556
+  },
+  {
+    "ID": 796507,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 474555
+  },
+  {
+    "ID": 796506,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474554
+  },
+  {
+    "ID": 796505,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474553
+  },
+  {
+    "ID": 796504,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474552
+  },
+  {
+    "ID": 796502,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 80,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474550
+  },
+  {
+    "ID": 796501,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474549
+  },
+  {
+    "ID": 796500,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474548
+  },
+  {
+    "ID": 796499,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474547
+  },
+  {
+    "ID": 796498,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474546
+  },
+  {
+    "ID": 796497,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 20,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474545
+  },
+  {
+    "ID": 796496,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474544
+  },
+  {
+    "ID": 796495,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 40,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474543
+  },
+  {
+    "ID": 796494,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474542
+  },
+  {
+    "ID": 796492,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474541
+  },
+  {
+    "ID": 796491,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474540
+  },
+  {
+    "ID": 796490,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474539
+  },
+  {
+    "ID": 796489,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 80,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474538
+  },
+  {
+    "ID": 796365,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474478
+  },
+  {
+    "ID": 796364,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474477
+  },
+  {
+    "ID": 796363,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474476
+  },
+  {
+    "ID": 796362,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474475
+  },
+  {
+    "ID": 796360,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474474
+  },
+  {
+    "ID": 796359,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474473
+  },
+  {
+    "ID": 796357,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474472
+  },
+  {
+    "ID": 796355,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474471
+  },
+  {
+    "ID": 796356,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474471
+  },
+  {
+    "ID": 796353,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 50,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474470
+  },
+  {
+    "ID": 796350,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474468
+  },
+  {
+    "ID": 796351,
+    "ConnectionTypeID": 1036,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-2",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1036,
+      "Title": "Type 2 (Tethered Connector) "
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 2,
+    "Level": {
+      "Comments": "Over 2 kW, usually non-domestic socket type",
+      "IsFastChargeCapable": false,
+      "ID": 2,
+      "Title": "Level 2 : Medium (Over 2kW)"
+    },
+    "PowerKW": 7.4,
+    "CurrentTypeID": 20,
+    "CurrentType": {
+      "Description": "Alternating Current - Three Phase",
+      "ID": 20,
+      "Title": "AC (Three-Phase)"
+    },
+    "Quantity": 1,
+    "POI_ID": 474468
+  },
+  {
+    "ID": 796349,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474467
+  },
+  {
+    "ID": 796348,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474466
+  },
+  {
+    "ID": 796347,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 45,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474465
+  },
+  {
+    "ID": 796346,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 80,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared",
+    "POI_ID": 474464
+  },
+  {
+    "ID": 796345,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "Reference": "",
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 90,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "Comments": "Power Shared.",
+    "POI_ID": 474463
+  },
+  {
+    "ID": 796344,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 20,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 474462
+  },
+  {
+    "ID": 796129,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 474366
+  },
+  {
+    "ID": 796128,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 474365
+  },
+  {
+    "ID": 796127,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 474364
+  },
+  {
+    "ID": 796126,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 2,
+    "Level": {
+      "Comments": "Over 2 kW, usually non-domestic socket type",
+      "IsFastChargeCapable": false,
+      "ID": 2,
+      "Title": "Level 2 : Medium (Over 2kW)"
+    },
+    "PowerKW": 24,
+    "Quantity": 1,
+    "POI_ID": 474363
+  },
+  {
+    "ID": 795734,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 474191
+  },
+  {
+    "ID": 794578,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "Voltage": 400,
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 473117
+  },
+  {
+    "ID": 794404,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 473032
+  },
+  {
+    "ID": 794402,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 473031
+  },
+  {
+    "ID": 794403,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 473031
+  },
+  {
+    "ID": 794002,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 472820
+  },
+  {
+    "ID": 793976,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 120,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 472811
+  },
+  {
+    "ID": 793977,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 120,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 472811
+  },
+  {
+    "ID": 793974,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 472810
+  },
+  {
+    "ID": 793975,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 120,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 472810
+  },
+  {
+    "ID": 793970,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "Voltage": 490,
+    "PowerKW": 120,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 472808
+  },
+  {
+    "ID": 793953,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 472798
+  },
+  {
+    "ID": 793532,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 1,
+    "Level": {
+      "Comments": "Under 2 kW, usually domestic socket types",
+      "IsFastChargeCapable": false,
+      "ID": 1,
+      "Title": "Level 1 : Low (Under 2kW)"
+    },
+    "Amps": 45,
+    "Voltage": 90,
+    "PowerKW": 30,
+    "CurrentTypeID": 10,
+    "CurrentType": {
+      "Description": "Alternating Current - Single Phase",
+      "ID": 10,
+      "Title": "AC (Single-Phase)"
+    },
+    "Quantity": 1,
+    "POI_ID": 472532
+  },
+  {
+    "ID": 793491,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "CurrentTypeID": 10,
+    "CurrentType": {
+      "Description": "Alternating Current - Single Phase",
+      "ID": 10,
+      "Title": "AC (Single-Phase)"
+    },
+    "Quantity": 1,
+    "POI_ID": 472508
+  },
+  {
+    "ID": 793373,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 120,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 472439
+  },
+  {
+    "ID": 793163,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 4,
+    "POI_ID": 472327
+  },
+  {
+    "ID": 793162,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 472326
+  },
+  {
+    "ID": 792666,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 471993
+  },
+  {
+    "ID": 792667,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 30,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 471993
+  },
+  {
+    "ID": 792665,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 471992
+  },
+  {
+    "ID": 792664,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 471991
+  },
+  {
+    "ID": 792662,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 471989
+  },
+  {
+    "ID": 792484,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 471855
+  },
+  {
+    "ID": 792482,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 471854
+  },
+  {
+    "ID": 792481,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 471853
+  },
+  {
+    "ID": 791080,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 160,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "Comments": "Charge 2 Vehicle at a time",
+    "POI_ID": 471003
+  },
+  {
+    "ID": 791081,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "Comments": "Charge 2 Vehicle at a time ",
+    "POI_ID": 471003
+  },
+  {
+    "ID": 791082,
+    "ConnectionTypeID": 0,
+    "ConnectionType": {
+      "FormalName": "Not Specified",
+      "ID": 0,
+      "Title": "Unknown"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 2,
+    "Level": {
+      "Comments": "Over 2 kW, usually non-domestic socket type",
+      "IsFastChargeCapable": false,
+      "ID": 2,
+      "Title": "Level 2 : Medium (Over 2kW)"
+    },
+    "PowerKW": 7.4,
+    "Quantity": 1,
+    "POI_ID": 471003
+  },
+  {
+    "ID": 791083,
+    "ConnectionTypeID": 0,
+    "ConnectionType": {
+      "FormalName": "Not Specified",
+      "ID": 0,
+      "Title": "Unknown"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 2,
+    "Level": {
+      "Comments": "Over 2 kW, usually non-domestic socket type",
+      "IsFastChargeCapable": false,
+      "ID": 2,
+      "Title": "Level 2 : Medium (Over 2kW)"
+    },
+    "PowerKW": 3.3,
+    "Quantity": 1,
+    "POI_ID": 471003
+  },
+  {
+    "ID": 790918,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 470897
+  },
+  {
+    "ID": 790757,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 120,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 470760
+  },
+  {
+    "ID": 790676,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 470710
+  },
+  {
+    "ID": 790675,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 470709
+  },
+  {
+    "ID": 788553,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 469744
+  },
+  {
+    "ID": 788551,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "Comments": "Resort has decent food and washrooms",
+    "POI_ID": 469742
+  },
+  {
+    "ID": 788101,
+    "ConnectionTypeID": 33,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-3 Configuration FF",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 33,
+      "Title": "CCS (Type 2)"
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "LevelID": 3,
+    "Level": {
+      "Comments": "40KW and Higher",
+      "IsFastChargeCapable": true,
+      "ID": 3,
+      "Title": "Level 3:  High (Over 40kW)"
+    },
+    "PowerKW": 60,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 2,
+    "POI_ID": 469522
+  },
+  {
+    "ID": 788094,
+    "ConnectionTypeID": 1036,
+    "ConnectionType": {
+      "FormalName": "IEC 62196-2",
+      "IsDiscontinued": false,
+      "IsObsolete": false,
+      "ID": 1036,
+      "Title": "Type 2 (Tethered Connector) "
+    },
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "PowerKW": 15,
+    "CurrentTypeID": 30,
+    "CurrentType": {
+      "Description": "Direct Current",
+      "ID": 30,
+      "Title": "DC"
+    },
+    "Quantity": 1,
+    "POI_ID": 469517
+  }
+]

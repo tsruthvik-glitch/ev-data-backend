@@ -1,173 +1,146 @@
-
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-from sqlalchemy import text
-import sys
-import os
+from pathlib import Path
 
-# Ensure we can import from the etl module
-sys.path.append(os.path.abspath(os.path.dirname(__file__)))
-from etl.db.db_utils import get_engine
-
-# ---------------------------
-# Page Configuration
-# ---------------------------
-st.set_page_config(
-    page_title="OpenChargeMap Dashboard",
-    page_icon="⚡",
-    layout="wide",
-    initial_sidebar_state="expanded"
+from etl.db.db_utils import (
+    get_connection,
+    get_database_url,
+    bulk_insert_csv,
+    truncate_table,
 )
 
-# ---------------------------
-# CSS Styling
-# ---------------------------
-st.markdown("""
-    <style>
-    .main {
-        background-color: #f5f5f5;
-    }
-    .stMetric {
-        background-color: #ffffff;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    }
-    h1, h2, h3 {
-        color: #2c3e50;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+# --------------------------------------------------
+# Streamlit Page Config
+# --------------------------------------------------
+st.set_page_config(page_title="EV Charging Infrastructure Analytics", layout="wide")
 
-# ---------------------------
-# Data Loading
-# ---------------------------
-@st.cache_data
-def load_data():
-    try:
-        engine = get_engine()
-        # Test connection first
-        with engine.connect() as conn:
-            pass
-            
-        # Query Stations
-        query_stations = "SELECT * FROM stations"
-        stations_df = pd.read_sql(query_stations, engine)
-        
-        # Query Connections
-        query_connections = "SELECT * FROM connections"
-        connections_df = pd.read_sql(query_connections, engine)
-        
+st.title("EV Charging Infrastructure Analytics Platform")
+st.markdown(
+    """
+    This application provides:
+    - Access to cleaned EV charging datasets
+    - Database load (Load step of the ETL)
+    - Interactive SQL analytics
+    """
+)
 
-        return stations_df, connections_df, None
-    except Exception as e:
-        return None, None, str(e)
-
-# ---------------------------
+# --------------------------------------------------
 # Sidebar Navigation
-# ---------------------------
-st.sidebar.title("⚡ EV Dashboard")
-page = st.sidebar.radio("Navigate", ["Home", "Map View", "Data Explorer", "Analysis"])
+# --------------------------------------------------
+menu = st.sidebar.radio(
+    "Select Module",
+    [
+        "View Cleaned Dataset",
+        "Load Data into Database",
+        "Run SQL Analytics",
+    ],
+)
 
-st.sidebar.markdown("---")
-st.sidebar.info("Data Source: OpenChargeMap API")
+DATA_DIR = Path("data/clean")
 
-# ---------------------------
-# Main Logic
-# ---------------------------
-stations, connections, error = load_data()
+# --------------------------------------------------
+# SECTION 1 — View Cleaned Dataset
+# --------------------------------------------------
+if menu == "View Cleaned Dataset":
+    st.header("Cleaned Dataset Viewer")
 
-if error:
-    st.error("⚠️ Database Connection Failed")
-    st.code(error)
-    st.stop()
+    dataset = st.selectbox(
+        "Choose dataset",
+        [
+            "stations_clean.csv",
+            "connections_clean.csv",
+            "operators_clean.csv",
+            "status_types.csv",
+            "usage_types.csv"
+        ]
+    )
 
-if stations is None or stations.empty:
-    st.warning("No data found in the database. Please run the ETL pipeline first.")
-    st.stop()
+    file_path = DATA_DIR / dataset
 
-# Merge for analysis if needed (though keeping separate is often cleaner for specific stats)
-full_data = pd.merge(connections, stations, on="station_id", how="left")
+    if file_path.exists():
+        df = pd.read_csv(file_path)
 
-if page == "Home":
-    st.title("🔋 EV Charging Infrastructure Overview")
-    
-    # KPIs
-    col1, col2, col3, col4 = st.columns(4)
-    
-    total_stations = stations['station_id'].nunique()
-    total_connections = len(connections)
-    avg_power = connections['power_kw'].mean()
-    active_stations = stations[stations['status'].str.lower().str.contains('operational', na=False)].shape[0]
-    
-    col1.metric("Total Stations", f"{total_stations}")
-    col2.metric("Total Connections", f"{total_connections}")
-    col3.metric("Avg Power (kW)", f"{avg_power:.1f} kW")
-    col4.metric("Operational Stations", f"{active_stations}")
-    
-    st.markdown("### Recent Activity")
-    st.dataframe(stations.sort_values(by="date_created", ascending=False).head(5)[['name', 'city', 'status', 'date_created']], use_container_width=True)
+        st.success(f"Loaded {len(df)} records")
+        st.dataframe(df, use_container_width=True)
 
-elif page == "Map View":
-    st.title("🗺️ Station Map")
-    
-    # Filter by Status
-    status_options = stations['status'].dropna().unique().tolist()
-    selected_status = st.multiselect("Filter by Status", status_options, default=status_options)
-    
-    map_data = stations[stations['status'].isin(selected_status)]
-    
-    if not map_data.empty:
-        fig = px.scatter_mapbox(
-            map_data,
-            lat="latitude",
-            lon="longitude",
-            hover_name="name",
-            hover_data=["city", "status", "number_of_points"],
-            color="status",
-            zoom=4,
-            height=600,
-            title="Charging Station Locations"
-        )
-        fig.update_layout(mapbox_style="open-street-map")
-        st.plotly_chart(fig, use_container_width=True)
+        st.download_button(label="Download CSV", data=df.to_csv(index=False), file_name=dataset, mime="text/csv")
     else:
-        st.info("No stations match the selected criteria.")
+        st.error("Selected file does not exist.")
 
-elif page == "Data Explorer":
-    st.title("💾 Data Explorer")
-    
-    tab1, tab2 = st.tabs(["Stations", "Connections"])
-    
-    with tab1:
-        st.subheader("Stations Data")
-        st.dataframe(stations, use_container_width=True)
-        
-    with tab2:
-        st.subheader("Connections Data")
-        st.dataframe(connections, use_container_width=True)
+# --------------------------------------------------
+# SECTION 2 — Load Data into Database
+# --------------------------------------------------
+elif menu == "Load Data into Database":
+    st.header("Load Cleaned Data into Database")
 
-elif page == "Analysis":
-    st.title("📊 Data Analysis")
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.subheader("Charger Types Distribution")
-        type_counts = connections['connection_type'].value_counts().reset_index()
-        type_counts.columns = ['Type', 'Count']
-        fig_pie = px.pie(type_counts, names='Type', values='Count', title="Connection Types")
-        st.plotly_chart(fig_pie, use_container_width=True)
-        
-    with col2:
-        st.subheader("Power Output Distribution")
-        fig_hist = px.histogram(connections, x="power_kw", nbins=20, title="Power (kW) Distribution", color_discrete_sequence=['#2ecc71'])
-        st.plotly_chart(fig_hist, use_container_width=True)
-    
-    st.subheader("Stations by City (Top 10)")
-    city_counts = stations['city'].value_counts().head(10).reset_index()
-    city_counts.columns = ['City', 'Count']
-    fig_bar = px.bar(city_counts, x='City', y='Count', title="Top Cities", color='Count', color_continuous_scale='Blues')
-    st.plotly_chart(fig_bar, use_container_width=True)
+    st.info("This step loads cleaned CSV files into the configured database (SQLite default or Postgres).")
 
+    if st.button("Start Data Load"):
+        tables = {
+            "stations_clean.csv": "stations",
+            "connections_clean.csv": "connections",
+            "operators_clean.csv": "operators",
+            "status_types.csv": "status_types",
+            "usage_types.csv": "usage_types",
+        }
+
+        try:
+            db_url = get_database_url()
+
+            for csv_file, table in tables.items():
+                csv_path = DATA_DIR / csv_file
+                if not csv_path.exists():
+                    st.warning(f"Skipping missing file: {csv_file}")
+                    continue
+
+                # Truncate target table to ensure idempotent load
+                try:
+                    truncate_table(table)
+                except Exception:
+                    # If truncate fails for permissions/engine specifics, continue to load
+                    st.info(f"Could not truncate {table}; attempting to load into existing table")
+
+                inserted = bulk_insert_csv(table, csv_path)
+                st.write(f"Loaded {inserted} rows into {table} from {csv_file}")
+
+            st.success("Data successfully loaded into database")
+
+        except Exception as e:
+            st.error(f"Load failed: {e}")
+
+# --------------------------------------------------
+# SECTION 3 — Run SQL Analytics
+# --------------------------------------------------
+elif menu == "Run SQL Analytics":
+    st.header("SQL Analytics Console")
+
+    st.markdown(
+        """
+        Run ad-hoc SQL queries or query database views created during the project.
+        """
+    )
+
+    sql_query = st.text_area(
+        "Enter SQL query",
+        height=180,
+        value="""
+        SELECT *
+        FROM vw_operator_performance
+        ORDER BY total_stations DESC
+        LIMIT 10;
+        """
+    )
+
+    if st.button("Execute Query"):
+        try:
+            conn = get_connection()
+            df = pd.read_sql_query(sql_query, conn)
+            close = getattr(conn, "close", None)
+            if callable(close):
+                conn.close()
+
+            st.success(f"Query executed successfully ({len(df)} rows)")
+            st.dataframe(df, use_container_width=True)
+
+        except Exception as e:
+            st.error(f"Query execution failed: {e}")

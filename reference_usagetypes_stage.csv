@@ -1,0 +1,8 @@
+IsPayAtLocation,IsMembershipRequired,IsAccessKeyRequired,ID,Title
+False,False,False,6,"Private - For Staff, Visitors or Customers"
+,True,,2,Private - Restricted Access
+,,,3,Privately Owned - Notice Required
+,,,1,Public
+False,True,True,4,Public - Membership Required
+False,False,False,7,Public - Notice Required
+True,False,False,5,Public - Pay At Location

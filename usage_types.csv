@@ -1,0 +1,9 @@
+usage_type_id,usage_title,pay_at_location,membership_required,access_key_required,is_public,usage_category
+0,(Unknown),False,False,False,False,PRIVATE
+6,Private - For Staff, Visitors or Customers,False,False,False,False,PRIVATE
+2,Private - Restricted Access,False,True,False,False,PRIVATE
+3,Privately Owned - Notice Required,False,False,False,False,PRIVATE
+1,Public,False,False,False,True,PUBLIC_FREE
+4,Public - Membership Required,False,True,True,True,PUBLIC_MEMBERS_ONLY
+7,Public - Notice Required,False,False,False,True,PUBLIC_FREE
+5,Public - Pay At Location,True,False,False,True,PUBLIC_PAID

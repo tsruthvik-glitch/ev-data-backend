@@ -1,0 +1,6 @@
+level_id,level_title,min_power_kw,max_power_kw,current_type,charging_speed,description
+0,Unknown,0.0,0.0,UNKNOWN,UNKNOWN,Charging level not specified
+1,Level 1 (AC),1.0,3.7,AC,SLOW,Standard household outlet charging (120V single-phase)
+2,Level 2 (AC),3.7,22.0,AC,FAST,Dedicated AC charging stations (230V-240V)
+3,DC Fast Charging,22.0,350.0,DC,RAPID,High-power DC fast charging
+4,Level 3 (DC),50.0,150.0,DC,ULTRA_FAST,Ultra-fast DC charging infrastructure

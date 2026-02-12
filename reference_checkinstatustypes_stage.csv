@@ -1,0 +1,18 @@
+IsPositive,IsAutomatedCheckin,ID,Title
+True,False,10,Charged Successfully
+True,True,15,Charged Successfully (Automated Checkin)
+False,False,20,Failed to Charge (Equipment Not Operational)
+False,False,22,Failed to Charge (Equipment Not Fully Installed)
+False,False,25,Failed to Charge (Equipment Problem)
+False,False,30,Failed to Charge (Equipment Not Compatible)
+False,False,40,Failed to Charge (Required Other Access Card/Fob etc.)
+False,False,50,Failed to Charge (No Charging Equipment Present)
+True,False,100,Charging Spot In Use (Other EV Parked)
+False,False,110,Charging Spot In Use (Non-EV Parked)
+False,False,120,Charging Spot Not Accessible (Access locked or site closed)
+False,False,130,Charging Spot Not Found (Inadequate or Incorrect Details)
+True,False,140,Equipment & Location Confirmed Correct
+False,False,150,Location Is A Duplicate
+False,False,160,Equipment/Location Has Been Decommissioned
+False,False,200,Other (Negative/Bad)
+True,False,210,Other (Positive/Good)

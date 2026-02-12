@@ -1,0 +1,12 @@
+IsLive,ID,Title
+False,1,Submission Under Review
+False,50,Imported and Under Review
+True,100,Imported and Published
+True,200,Submission Published
+False,250,Submission Rejected - Incomplete
+False,1000,Delisted
+False,1001,Delisted - Duplicate
+False,1002,Delisted - No Longer Active/Decommissioned
+False,1005,Delisted - Superseded by Update
+False,1010,Delisted - Not Public Information/Is Private Residence
+False,1020,Delisted - Removed by Import Data Provider

@@ -1,0 +1,12 @@
+connection_type_id,connection_title,formal_name,is_discontinued,is_obsolete,connector_category,connector_group
+0,Unknown,Not Specified,False,False,UNKNOWN,OTHER
+1,IEC 62196-2 Type 1,SAE J1772 / Type 1,False,False,AC,TYPE1
+2,IEC 62196-2 Type 2,Mennekes / Type 2,False,False,AC,TYPE2
+3,BS1363 3 Pin 13 Amp,BS1363 / Type G,False,False,AC,DOMESTIC
+4,Blue Commando (2P+E),Blue Commando,False,False,AC,DOMESTIC
+5,IEC 62196-3 CHAdeMO,CHAdeMO,False,False,DC,CHADEMO
+6,Avcon Connector,Avcon SAE J1772-2001,True,False,AC,AVCON
+7,IEC 62196-3 CCS Combo 1,CCS Type 1 (Combo 1),False,False,DC,CCS
+8,IEC 62196-3 CCS Combo 2,CCS Type 2 (Combo 2),False,False,DC,CCS
+9,Tesla Connector,Tesla Proprietary,False,False,DC,TESLA
+10,IEC 60309 (Commando),IEC 60309 / Commando,False,False,AC,COMMERCIAL

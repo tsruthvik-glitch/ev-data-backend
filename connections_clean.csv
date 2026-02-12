@@ -1,0 +1,165 @@
+"""
+Connections data cleaning and validation module.
+
+This module provides utilities for cleaning and validating connection data
+from the staging CSV files and preparing it for database loading.
+
+DEPRECATED: Use etl/transform/clean_connections.py instead.
+This file is kept for backwards compatibility and reference only.
+"""
+
+import json
+from pathlib import Path
+from typing import List, Dict, Any, Optional
+
+# Modern clean connections import (recommended)
+try:
+    from etl.transform.clean_connections import clean_connections_from_list
+except ImportError:
+    # Fallback if import fails
+    def clean_connections_from_list(poi_data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Fallback function - use etl/transform/clean_connections.py instead."""
+        print("[WARN] Using fallback clean_connections function")
+        return []
+
+
+def load_and_clean_connections_csv(csv_file: Optional[Path] = None) -> List[Dict[str, Any]]:
+    """
+    Load connections from staging CSV and return cleaned list of dicts.
+    
+    DEPRECATED: Use etl/transform/clean_connections.py instead.
+    
+    Args:
+        csv_file: Path to staging CSV (defaults to etl/staging/connections_stage.csv)
+    
+    Returns:
+        List of cleaned connection dictionaries
+    """
+    if csv_file is None:
+        csv_file = Path("etl/staging/connections_stage.csv")
+    
+    if not csv_file.exists():
+        raise FileNotFoundError(f"Staging file not found: {csv_file}")
+    
+    # Import pandas only if available
+    try:
+        import pandas as pd
+        df = pd.read_csv(csv_file)
+        connections = df.to_dict(orient="records")
+    except ImportError:
+        # Fallback: manual CSV parsing
+        import csv
+        connections = []
+        with open(csv_file, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            connections = list(reader)
+    
+    # Basic cleaning
+    cleaned = []
+    for conn in connections:
+        # Skip invalid records
+        if not conn.get("poi_id") or not conn.get("connection_id"):
+            continue
+        
+        # Normalize numeric fields
+        try:
+            quantity = int(conn.get("quantity") or 1)
+            if quantity < 1:
+                quantity = 1
+        except (ValueError, TypeError):
+            quantity = 1
+        
+        # Ensure required fields
+        conn["quantity"] = quantity
+        conn["power_kw"] = conn.get("power_kw") or None
+        conn["voltage"] = conn.get("voltage") or None
+        conn["amps"] = conn.get("amps") or None
+        
+        cleaned.append(conn)
+    
+    return cleaned
+
+
+def validate_connections(connections: List[Dict[str, Any]]) -> tuple:
+    """
+    Validate list of connections.
+    
+    Returns:
+        (valid_count, invalid_count, error_list)
+    """
+    valid = 0
+    invalid = 0
+    errors = []
+    
+    for idx, conn in enumerate(connections):
+        if not conn.get("poi_id") or not conn.get("connection_id"):
+            invalid += 1
+            errors.append(f"Row {idx}: Missing poi_id or connection_id")
+            continue
+        
+        if not conn.get("connection_type_id"):
+            invalid += 1
+            errors.append(f"Row {idx}: Missing connection_type_id")
+            continue
+        
+        # Validate numeric fields if present
+        for field in ["power_kw", "voltage", "amps"]:
+            if conn.get(field):
+                try:
+                    float(conn.get(field))
+                except (ValueError, TypeError):
+                    invalid += 1
+                    errors.append(f"Row {idx}: Invalid {field} value")
+                    continue
+        
+        valid += 1
+    
+    return valid, invalid, errors
+
+
+def export_clean_connections_json(connections: List[Dict[str, Any]], output_file: Optional[Path] = None) -> int:
+    """
+    Export cleaned connections to JSON file.
+    
+    DEPRECATED: Use etl/staging/staging_manager.py::stage_connections instead.
+    
+    Args:
+        connections: List of connection dictionaries
+        output_file: Output path (defaults to data/processed/connections_clean.json)
+    
+    Returns:
+        Number of records written
+    """
+    if output_file is None:
+        output_file = Path("data/processed/connections_clean.json")
+    
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(connections, f, ensure_ascii=False, indent=2)
+    
+    print(f"[OK] Exported {len(connections)} connections to {output_file}")
+    return len(connections)
+
+
+if __name__ == "__main__":
+    # Example usage (for backwards compatibility)
+    print("[*] Loading and cleaning connections from staging CSV...")
+    
+    try:
+        connections = load_and_clean_connections_csv()
+        print(f"[OK] Loaded {len(connections)} connections")
+        
+        valid, invalid, errors = validate_connections(connections)
+        print(f"[OK] Validation: {valid} valid, {invalid} invalid")
+        
+        if errors:
+            for error in errors[:5]:  # Show first 5 errors
+                print(f"  [ERR] {error}")
+        
+        # Export to JSON
+        n = export_clean_connections_json(connections)
+        print(f"[OK] Pipeline complete: {n} connections processed")
+    
+    except Exception as e:
+        print(f"[ERR] Error: {e}")

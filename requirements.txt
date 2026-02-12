@@ -1,13 +1,122 @@
+# =========================================================================
+# EV CHARGING MAP (OpenChargeMap) - ETL Pipeline v2.0
+# Python 3.13+ Requirements
+# =========================================================================
+# Install with: pip install -r requirements.txt
+# 
+# This project supports dual-database operation:
+# - SQLite3 (built-in, no installation needed)
+# - PostgreSQL (requires psycopg2-binary)
+# 
+# Optional dependencies are marked [Optional]
+# =========================================================================
 
-streamlit
-pandas
-numpy
-sqlalchemy
-mysql-connector-python
-plotly
-python-dotenv
-requests
-tqdm
-pydantic
-python-dateutil
-protobuf>=3.20.0
+# =========================================================================
+# CORE ETL & DATA PROCESSING (Required)
+# =========================================================================
+# Pandas: Data manipulation and CSV handling
+pandas>=2.1.4,<3.0.0
+
+# NumPy: Numerical operations and array handling
+numpy>=1.26.4,<2.0.0
+
+# =========================================================================
+# DATABASE CONNECTIVITY (Required)
+# =========================================================================
+# SQLAlchemy: ORM and database abstraction layer
+# Supports both SQLite and PostgreSQL with automatic dialect detection
+SQLAlchemy>=2.0.25,<3.0.0
+
+# psycopg2-binary: PostgreSQL adapter for Python
+# [Optional] Only needed if using PostgreSQL backend via DATABASE_URL
+# Comment out if using SQLite only
+psycopg2-binary>=2.9.9,<3.0.0
+
+# =========================================================================
+# CONFIGURATION MANAGEMENT (Required)
+# =========================================================================
+# PyYAML: YAML file parsing for config.yaml
+PyYAML>=6.0.1,<7.0.0
+
+# python-dotenv: Environment variable loading from .env files
+# Supports DATABASE_URL and DB_URL for database configuration
+python-dotenv>=1.0.1,<2.0.0
+
+# =========================================================================
+# HTTP & API (Required for Extract stage)
+# =========================================================================
+# Requests: HTTP library for OpenChargeMap API calls
+requests>=2.31.0,<3.0.0
+
+# =========================================================================
+# DATA VALIDATION & QUALITY (Required)
+# =========================================================================
+# Pydantic: Data validation using Python type annotations
+# Used for schema validation and quality checks
+pydantic>=2.5.3,<3.0.0
+
+# =========================================================================
+# UTILITIES (Required)
+# =========================================================================
+# python-dateutil: Date/time utilities for handling timestamp parsing
+python-dateutil>=2.8.2,<3.0.0
+
+# tqdm: Progress bars for long-running operations
+# Shows extraction, transformation, and loading progress
+tqdm>=4.66.1,<5.0.0
+
+# =========================================================================
+# OPTIONAL DEPENDENCIES
+# =========================================================================
+# Uncomment as needed for enhanced functionality
+
+# For optimized CSV processing [Optional]
+# openpyxl>=3.1.2  # Excel file support if needed
+
+# For data profiling and quality reports [Optional]
+# ydata-profiling>=4.5.0  # Comprehensive data quality analysis
+
+# For async HTTP operations [Optional]
+# aiohttp>=3.9.0  # Async HTTP client for parallel API calls
+
+# For database schema inspection [Optional]
+# sqlalchemy-utils>=0.41.1  # Extended SQLAlchemy utilities
+
+# For environment-specific configurations [Optional]
+# environs>=10.2.0  # Environment variable parsing with validation
+
+# =========================================================================
+# DEVELOPMENT DEPENDENCIES (Optional)
+# =========================================================================
+# Install with: pip install -r requirements.txt -r requirements-dev.txt
+# 
+# pytest>=7.4.0  # Unit testing framework
+# pytest-cov>=4.1.0  # Code coverage reporting
+# black>=23.11.0  # Code formatter
+# flake8>=6.1.0  # Linter
+# mypy>=1.7.1  # Static type checker
+# pylint>=3.0.3  # Advanced linter
+
+# =========================================================================
+# NOTES FOR DIFFERENT DEPLOYMENT SCENARIOS
+# =========================================================================
+# 
+# LOCAL DEVELOPMENT (SQLite):
+#   pip install -r requirements.txt
+#   - psycopg2-binary not used
+#   - Data stored at data/db/ocm.sqlite
+#   - No database server required
+# 
+# POSTGRESQL DEPLOYMENT:
+#   pip install -r requirements.txt
+#   - Set DATABASE_URL or DB_URL environment variable
+#   - Example: DATABASE_URL=postgresql://user:pass@localhost:5432/db
+#   - psycopg2-binary required for database connectivity
+# 
+# DOCKER DEPLOYMENT:
+#   Build FROM python:3.13-slim
+#   RUN pip install -r requirements.txt
+#   - All requirements installed in container
+#   - Database selected via DATABASE_URL env var
+# 
+# =========================================================================

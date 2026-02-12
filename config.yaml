@@ -1,0 +1,285 @@
+# =====================================================
+# EV CHARGING ETL CONFIGURATION v2.0
+# =====================================================
+# This configuration supports dual-database operation:
+# - SQLite: Default, file-based (ideal for testing/single-machine)
+# - PostgreSQL: Via DATABASE_URL or DB_URL environment variable
+#
+# Database selection logic:
+# 1. Reads DATABASE_URL environment variable (PostgreSQL connection string)
+# 2. Fallback to DB_URL environment variable
+# 3. Default: SQLite at data/db/ocm.sqlite
+#
+# Examples:
+#   PostgreSQL: DATABASE_URL="postgresql://user:pass@localhost:5432/ev_charging_db"
+#   SQLite default: Uses relative path data/db/ocm.sqlite
+# =====================================================
+
+environment: production
+
+# Supported values: development, staging, production
+pipeline_mode: staging  # staging, transform, load phases
+
+# -----------------------------------------------------
+# FILE SYSTEM PATHS
+# All paths are relative to project root
+# The pipeline creates directories automatically
+# -----------------------------------------------------
+
+paths:
+  raw_data: data/raw/
+  processed_data: etl/Processed/
+  stage_data: etl/staging/
+  database_dir: data/db/
+  logs: etl/log/
+
+# Ensure logs directory exists
+ensure_directories: true
+
+# -----------------------------------------------------
+# RAW INPUT FILES
+# Source data for the ETL pipeline
+# Must be in JSON format (POI from OpenChargeMap API)
+# -----------------------------------------------------
+
+files:
+  poi_raw: poi_raw_20260203_1600.json
+  poi_description: "OpenChargeMap POI data with charging stations and connections"
+
+# Expected schema: { "data": [ { "ID": int, "AddressInfo": {...}, "Connections": [...] } ] }
+
+# -----------------------------------------------------
+# DATABASE CONFIGURATION - DUAL-DATABASE SUPPORT
+# =====================================================
+# DO NOT HARDCODE CREDENTIALS IN THIS FILE
+# Use environment variables instead:
+#   DATABASE_URL or DB_URL for PostgreSQL
+#   (No env var needed for SQLite - auto-creates at data/db/ocm.sqlite)
+# =====================================================
+
+database:
+  # Database type: auto-detected from DATABASE_URL or DB_URL
+  # Leave type: auto unless you have specific needs
+  type: auto
+  
+  # SQLite Configuration (Default)
+  # Used when no DATABASE_URL/DB_URL environment variable is set
+  sqlite:
+    path: data/db/ocm.sqlite
+    timeout: 10
+    check_same_thread: false
+    
+  # PostgreSQL Configuration (Via Environment Variables)
+  # Set DATABASE_URL or DB_URL to override default SQLite
+  # Example: postgresql://username:password@localhost:5432/ev_charging_db
+  # The db_utils.py module handles environment variable detection
+  
+  schema: public
+  echo_sql: false  # Set to true for SQL debugging
+
+# Connection pool settings (PostgreSQL only)
+  pool_size: 5
+  max_overflow: 10
+  pool_pre_ping: true  # Verify connections before using
+
+# Timeout for database operations (seconds)
+  operation_timeout: 30
+
+# Automatic backup before truncating (SQLite only)
+  backup_before_truncate: true
+
+# =====================================================
+# LOGGING CONFIGURATION
+# Windows-compatible logging (no emoji, text prefixes)
+# =====================================================
+
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file_prefix: etl_
+  date_format: "%Y%m%d"
+  # Text-based log format for Windows compatibility
+  log_format: "[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s"
+  # Log file location: etl/log/etl_YYYYMMDD.log
+  log_directory: etl/log/
+  # Max log file size before rotation (MB)
+  max_file_size_mb: 100
+  # Keep last N rotated log files
+  backup_count: 5
+  # Console output
+  console_output: true
+  # Include traceback in error logs
+  include_traceback: true
+
+# =====================================================
+# ETL RUNTIME SETTINGS
+# =====================================================
+
+etl:
+  # Process records in batches for memory efficiency
+  batch_size: 100
+  
+  # Retry failed operations
+  max_retries: 3
+  retry_delay_seconds: 5
+  
+  # Stop pipeline on first error
+  fail_fast: false
+  
+  # Enable detailed progress reporting
+  progress_reporting: true
+  
+  # Parallel processing settings
+  parallel_workers: 4
+  
+  # Validation before load
+  validate_before_load: true
+
+# =====================================================
+# DATA QUALITY RULES
+# Applied during transform phase
+# =====================================================
+
+data_quality:
+  # Spatial validation
+  allow_null_latitude: false
+  allow_null_longitude: false
+  latitude_range: [-90, 90]
+  longitude_range: [-180, 180]
+  
+  # Power specifications
+  min_power_kw: 1.0
+  max_power_kw: 350.0
+  
+  # Connection validation
+  require_connection_type: true
+  allow_null_connection_quantity: false
+  
+  # Operator/Address validation
+  require_operator: false
+  allow_null_address: true
+  
+  # Station validation rules
+  require_station_title: true
+  min_title_length: 3
+  max_title_length: 255
+
+# =====================================================
+# TRANSFORM FLAGS
+# Text normalization and standardization
+# =====================================================
+
+transform:
+  # Remove exact duplicate records
+  drop_duplicates: true
+  
+  # Normalize whitespace and case
+  normalize_text: true
+  trim_whitespace: true
+  lowercase_columns: false  # Don't lowercase column names, only values where appropriate
+  
+  # Geographic normalization
+  round_coordinates: 6  # decimal places for lat/lng
+  
+  # Connection normalization
+  standardize_connector_types: true
+  standardize_current_types: true
+  
+  # Remove test/invalid records
+  filter_test_stations: true
+  test_keywords: ["test", "demo", "example", "mock"]
+
+# =====================================================
+# LOAD OPTIONS
+# Database loading behavior
+# =====================================================
+
+load:
+  # Truncate tables before loading fresh data
+  truncate_before_load:
+    - stations
+    - connections
+  
+  # Preserve reference data (never truncate)
+  preserve_tables:
+    - status_types
+    - usage_types
+    - connection_types
+    - charger_levels
+    - connection_current_types
+    - power_supply_types
+    - operators
+  
+  # Insert method: insert (default) or upsert (if ID exists, update)
+  insert_method: insert
+  
+  # Commit per table for transactional integrity
+  commit_per_table: true
+  
+  # On constraint violation: skip, update, or error
+  on_conflict: skip
+  
+  # Log all inserts for audit trail
+  audit_inserts: true
+
+# =====================================================
+# STAGING CONFIGURATION
+# Reference data and intermediate outputs
+# =====================================================
+
+staging:
+  # Generate CSV files for each reference type
+  generate_reference_csvs: true
+  reference_csv_dir: etl/staging/
+  
+  # Reference types to export
+  reference_types:
+    - connection_types
+    - current_types
+    - usage_types
+    - status_types
+    - charger_levels
+    - power_supply_types
+    - operators
+  
+  # Generate consolidated staging table
+  generate_consolidated_stage: true
+  consolidated_stage_file: etl/staging/reference_stage.csv
+  
+  # Station and connection staging
+  generate_station_staging: true
+  station_staging_file: etl/staging/stations_stage.csv
+  
+  generate_connection_staging: true
+  connection_staging_file: etl/staging/connections_stage.csv
+
+# =====================================================
+# PIPELINE METADATA
+# =====================================================
+
+pipeline:
+  name: ev_charging_etl
+  owner: data_engineering
+  version: "2.0.0"
+  
+  # Pipeline description
+  description: "Extract OpenChargeMap EV charging station data, transform to normalized schema, stage for loading, and load to SQLite or PostgreSQL database with reference data seeding"
+  
+  # Supported phases: extract, transform, stage, load
+  phases:
+    - extract
+    - transform
+    - stage
+    - load
+  
+  # Version history
+  version_history:
+    "2.0.0": "Dual-database support (SQLite/PostgreSQL), staging phase, reference data consolidation, Windows compatibility"
+    "1.0.0": "Initial ETL pipeline with hardcoded PostgreSQL config"
+  
+  # Last updated
+  last_updated: "2026-02-08"
+  
+  # Expected data volume
+  expected_stations: "~500,000"
+  expected_connections: "~1,000,000"
+  expected_run_time_minutes: 15
