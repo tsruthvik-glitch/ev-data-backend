@@ -1,0 +1,13 @@
+
+streamlit
+pandas
+numpy
+sqlalchemy
+mysql-connector-python
+plotly
+python-dotenv
+requests
+tqdm
+pydantic
+python-dateutil
+protobuf>=3.20.0
